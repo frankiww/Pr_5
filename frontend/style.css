@@ -1,0 +1,58 @@
+body{
+    background-color: #bddcec;
+    
+}
+/* 
+#d5f0fd голубой 
+#eccdbd розовый
+*/
+h1, h2{
+    text-align: center;
+
+}
+
+form{
+    border: 2px solid #407997;
+
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+#protected{
+    text-align: center;
+
+}
+form div{
+    text-align: center;
+    margin: 15px 10px;
+}
+input{
+    margin: 0px 10px;
+    width: 35%;
+}
+button{
+    background-color: #407997;
+    color: white;
+    transition-duration: 0.4s;
+    width: 25%;
+    cursor: pointer;
+    box-shadow: 0 5px #407997;
+    border-radius: 5px;
+    height: 25px;
+    margin: 3% 10px;
+    
+}
+button:hover{
+    background-color: #cae6f5;
+    color: black;
+
+}
+button:active{
+    background-color: #cae6f5;
+    color: black;
+    transform: translateY(4px);
+}
+
+#protectedData{
+    background-color: #cae6f5;
+    border: 2px dashed #407997;
+}

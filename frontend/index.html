@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <title>Аутентификация</title>
+    </head>
+
+    <body>
+        <h1>Аутентификация с помощью JWT</h1>
+
+        <div>
+            <h2>Регистрация</h2>
+            <form id="regForm">
+                <div>
+                    <label for="regUsername">Введите логин:</label>
+                    <input type="text" id="regUsername" placeholder="Логин" required>
+                </div>
+                <div>
+                    <label for="regPassword">Введите пароль:</label>
+                    <input type="password" id="regPassword" placeholder="Пароль" required>
+                </div>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+            <p id="regMessage"></p>
+        </div>
+
+        <div>
+            <h2>Войти</h2>
+            <form id="loginForm">
+                <div>
+                    <label for="loginUsername">Введите логин:</label>
+                    <input type="text" id="loginUsername" placeholder="Логин" required>
+                </div>
+                <div>
+                    <label for="loginPassword">Введите пароль:</label>
+                    <input type="password" id="loginPassword" placeholder="Пароль" required>
+                </div>
+                <button type="submit">Войти</button>
+            </form>
+            <p id="loginMessage"></p>
+        </div>
+
+        <div id="protected">
+            <h2>Защищенные данные</h2>
+            <button id="fetchProtectedData">Получить данные</button>
+            <p id="protectedData"></p> 
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>
